@@ -1,0 +1,61 @@
+memory_tscm:
+  - TCF7
+  - KLF2
+  - CCR7
+  - IL7R
+  - LEF1
+  - SELL
+  - SLAMF6
+  - BCL2
+  - FOXO1
+
+effector:
+  - IRF4
+  - PRDM1
+  - TBX21
+  - ZEB2
+  - GZMB
+  - GZMA
+  - PRF1
+  - IFNG
+  - KLRG1
+
+exhaustion_inhibitory:
+  - PDCD1
+  - HAVCR2
+  - TIGIT
+  - TOX
+  - ENTPD1
+  - LAG3
+  - CTLA4
+
+memory_metabolism:
+  - CPT1A
+  - PPARGC1A
+  - FOXO1
+  - BCL2
+
+glycolysis_activation:
+  - SLC2A1
+  - G6PD
+  - HIF1A
+  - LDHA
+  - HK2
+
+early_activation:
+  - CD69
+  - IL2RA
+  - TNFRSF9
+  - ICOS
+  - FOS
+  - JUN
+  - MYC
+
+cytokine_effector:
+  - IFNG
+  - TNF
+  - IL2
+  - GZMB
+  - GZMA
+  - PRF1
+
