@@ -159,7 +159,7 @@ def plot_gene_clustermap(
 
     hm_pos = g.ax_heatmap.get_position()
     cc_h   = g.ax_col_colors.get_position().height
-    g.ax_col_colors.set_position([hm_pos.x0, hm_pos.y0 - cc_h - 0.005, hm_pos.width, cc_h])
+    g.ax_col_colors.set_position((hm_pos.x0, hm_pos.y0 - cc_h - 0.005, hm_pos.width, cc_h))
 
     g.ax_cbar.set_title("Z-score", fontsize=9, pad=6)
     g.ax_cbar.tick_params(labelsize=8)
@@ -229,16 +229,16 @@ def plot_clustermap(
     hm_pos  = g.ax_heatmap.get_position()
     cc_pos  = g.ax_col_colors.get_position()
     cc_h    = cc_pos.height
-    g.ax_col_colors.set_position([
+    g.ax_col_colors.set_position((
         hm_pos.x0, hm_pos.y0 - cc_h - 0.005,
         hm_pos.width, cc_h,
-    ])
+    ))
 
     cd_pos = g.ax_col_dendrogram.get_position()
-    g.ax_col_dendrogram.set_position([
+    g.ax_col_dendrogram.set_position((
         hm_pos.x0, hm_pos.y1,
         hm_pos.width, cd_pos.height,
-    ])
+    ))
 
     g.ax_cbar.set_title("Z-score", fontsize=9, pad=6)
     g.ax_cbar.tick_params(labelsize=8)

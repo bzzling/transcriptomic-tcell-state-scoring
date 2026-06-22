@@ -1,4 +1,4 @@
-# Transcriptomic T-cell State Scoring
+# Transcriptomics Exploration
 
 This repository contains a small RNA-seq workflow for visualizing T-cell transcriptional states from normalized counts.
 
