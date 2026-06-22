@@ -4,15 +4,7 @@ from pathlib import Path
 import pandas as pd
 
 
-def load_counts(path: Path) -> pd.DataFrame:
-    """Load normalized counts matrix, indexed by gene symbol.
-
-    Drops the probe ID column, uses Gene Symbol as index,
-    and averages duplicate gene symbols.
-
-    Returns:
-        DataFrame with gene symbols as index, sample IDs as columns.
-    """
+def load_counts(path: str | Path) -> pd.DataFrame:
     df = pd.read_csv(path, sep="\t", compression="gzip")
     gene_id_col = df.columns[0]  # "Probe Set ID"
 
@@ -27,15 +19,7 @@ def load_counts(path: Path) -> pd.DataFrame:
     return df
 
 
-def load_series_matrix(path: Path) -> pd.DataFrame:
-    """Parse GEO series matrix into a tidy metadata DataFrame.
-
-    Extracts !Sample_geo_accession and !Sample_title.
-    The sample_id is the submitter label before the first colon in the title.
-
-    Returns:
-        DataFrame with columns: sample_id, geo_accession, title.
-    """
+def load_series_matrix(path: str | Path) -> pd.DataFrame:
     rows: dict[str, list[str]] = {}
     with gzip.open(path, "rt") as f:
         for line in f:

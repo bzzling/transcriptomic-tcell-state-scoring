@@ -1,10 +1,10 @@
 # Transcriptomic T-cell State Scoring
 
-This repository contains a small RNA-seq workflow for scoring T-cell transcriptional states from a gene expression matrix. The goal is to quickly generate a report showing whether a sample is relatively enriched for Tscm-like, effector-like, exhaustion, or metabolic transcriptional programming.
+This repository contains a small RNA-seq workflow for visualizing T-cell transcriptional states from normalized counts.
 
 ## Status
 
-WIP as of 06/19/2026
+WIP as of 06/22/2026
 
 ## Data
 

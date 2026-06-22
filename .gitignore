@@ -16,4 +16,4 @@ __pycache__/
 .pixi/*
 !.pixi/config.toml
 
-.vscode
+.vscode/*
